@@ -1,0 +1,20 @@
+.margenArriba{
+    margin-top:  35px;
+}
+
+.margenYoutube{
+    margin-top:  95px;
+}
+
+.margenButtonModal{
+    margin-top: 25px;
+    justify-content : center;
+}
+/* .centrado {vertical-align: middle;display:inline;}
+ */
+
+.letraCancion{
+    font-size: 20px;
+    font-family:   Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

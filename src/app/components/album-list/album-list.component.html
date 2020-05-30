@@ -1,0 +1,26 @@
+<div class="container pb-5">
+    <h1 class="text-center letracolor">Lista de Albumes</h1>
+</div>
+
+<div class="col-md-4 card-deck pb-4" *ngFor = "let album of albums">
+    
+    <div class="card text-center">
+        <!-- <img [src]={{album.caratula}} class="card-img-top" alt="..."> -->
+        <img [src]="album.caratula" alt="No Image" class="card-img-top">
+
+        <div class="card-body text-white">
+            <h5 class="card-title">Album: {{album.nombre_album}} - {{album.cantidad_canciones}} canciones</h5>
+            <!-- <p class="card-text">Disquera: {{album.disquera}} - {{album.fecha_creacion}}</p> -->
+            <p class="card-text">Disquera: {{album.disquera}}   </p>
+            <p class="card-text">Integrantes</p>
+            <p class="card-text">{{album.integrantes}}</p>
+            <!-- <button [routerLink]="['/song', album.id_album]" class="btn btn-success" (click)="guardarId(album.id_album)">Ver mas</button> -->
+            <button [routerLink]="['/song', album.id_album]" class="btn btn-success">Ver mas</button>
+            
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+        </div>
+    
+</div>

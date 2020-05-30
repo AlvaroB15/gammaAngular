@@ -1,0 +1,56 @@
+<div class="row text-center" *ngFor = "let detail of details" >
+    <!-- *ngFor = "let detail of details" -->
+    <div class="col-8 text-white margenArriba " >
+
+            <h1>{{ details[0].nombre_cancion }}</h1>
+
+            <audio controls class="pt-20 p-20 margenArriba">
+                <source src={{details[0].link_cancion}} type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+
+            <div class="mt-20 margenArriba letraCancion">
+                <pre>{{ details[0].letra_cancion }}</pre>
+            </div>
+    </div>
+        
+    <div class="col-4 pt-20 margenYoutube">
+        <!-- <iframe class="mt-100" width="540" height="325" src={{detail[0].link_video}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe class="mt-100" width="540" height="325" src={{videoUrl}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <iframe class="e2e-iframe-trusted-src" width="540" height="325" [src]="videoUrl"></iframe>
+        
+        
+        <!-- Button trigger modal -->
+        <div class="centrado">
+            <button type="button" class="btn btn-primary margenButtonModal" data-toggle="modal" data-target="#exampleModal">Agrandar el Reproductor (TODAVIA NO IMPLEMENTADO XD)</button>
+        </div>
+      
+        <div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
