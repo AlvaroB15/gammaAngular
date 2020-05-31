@@ -1,0 +1,13 @@
+<div class="container">
+    
+    <h1 class="titulo"> Conciertos Conocidos y tremendos</h1>
+    
+    <div *ngFor = "let videos of videoA">
+    
+        <p class="iframeYT text-center">{{videos.titulo}}</p>
+        
+        <iframe class="e2e-iframe-trusted-src" width="540" height="325" [src]='sanitizer.bypassSecurityTrustResourceUrl(videos.link)'  frameborder="0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+    
+    </div>
+    
+</div>

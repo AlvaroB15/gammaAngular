@@ -32,7 +32,7 @@ export class SongListComponent implements OnInit {
 
     this.songService.getSongOfAlbum(params.id).subscribe(
       res => {
-        console.log(res)
+        // console.log(res)
         this.songs = res;
       },
       err => console.error(err)
@@ -40,7 +40,7 @@ export class SongListComponent implements OnInit {
 
     this.albumService.getAlbum(params.id).subscribe(
       res => {
-        console.log(res)
+        // console.log(res)
         this.album = res;
       },
       err => console.error(err)

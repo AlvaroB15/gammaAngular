@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/gamma",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

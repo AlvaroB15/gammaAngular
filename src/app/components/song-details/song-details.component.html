@@ -1,6 +1,6 @@
 <div class="row text-center" *ngFor = "let detail of details" >
     <!-- *ngFor = "let detail of details" -->
-    <div class="col-8 text-white margenArriba " >
+    <div class=" text-white margenArriba text-center" >
 
             <h1>{{ details[0].nombre_cancion }}</h1>
 
@@ -14,11 +14,15 @@
             </div>
     </div>
         
-    <div class="col-4 pt-20 margenYoutube">
+    <div class=" margenYoutube">
         <!-- <iframe class="mt-100" width="540" height="325" src={{detail[0].link_video}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <!-- <iframe class="mt-100" width="540" height="325" src={{videoUrl}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <iframe class="e2e-iframe-trusted-src" width="540" height="325" [src]="videoUrl"></iframe>
         
+        <!-- <iframe class="mt-100" width="540" height="325" src={{videoUrl}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+        <!-- <iframe class="e2e-iframe-trusted-src" width="540" height="325" [src]="videoUrl"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        <div class="contenedor-responsivo">
+            <iframe class="e2e-iframe-trusted-src iframe-responsivo" width="540" height="325" [src]="videoUrl"  frameborder="0" gesture="media"  allow="encrypted-media" allowfullscreen iframe-responsivo></iframe>
+        </div>
         
         <!-- Button trigger modal -->
         <div class="centrado">

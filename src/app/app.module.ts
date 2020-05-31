@@ -14,6 +14,10 @@ import { SongDetailsComponent } from './components/song-details/song-details.com
 import { SongService } from './services/song.service';
 import { AlbumService } from './services/album.service';
 
+import { FotosListComponent } from './components/fotos-list/fotos-list.component';
+import { VideosListComponent } from './components/videos-list/videos-list.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +25,10 @@ import { AlbumService } from './services/album.service';
     NavigationComponent,
     AlbumListComponent,
     SongListComponent,
-    SongDetailsComponent
+    SongDetailsComponent,
+    FotosListComponent,
+    VideosListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

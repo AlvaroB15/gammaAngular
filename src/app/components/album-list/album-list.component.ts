@@ -22,9 +22,10 @@ export class AlbumListComponent implements OnInit {
   constructor( private albumService : AlbumService) { }
 
   ngOnInit(): void {
+    this.albums = "";
     this.albumService.getAlbums().subscribe(
       res => {
-        console.log(res)
+        // console.log(res)
         this.albums = res;
       },
       err => console.error(err)

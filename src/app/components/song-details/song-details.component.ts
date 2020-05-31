@@ -26,11 +26,11 @@ export class SongDetailsComponent implements OnInit {
 
     this.songService.getSong(params.id).subscribe(
       res => {
-        console.log(res)
+        // console.log(res)
         this.details = res;
-        console.log(this.details);
+        // console.log(this.details);
         this.video = this.details[0].link_video;
-        console.log(this.video);
+        // console.log(this.video);
         this.updateVideoUrl(this.video);
       },
       err => console.error(err)
